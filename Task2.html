@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Form & Gallery Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <center>
+    <img src="https://apexplanet.in/wp-content/uploads/2023/08/apspl9-1536x571.png.webp" alt="Apexplanet" style="width:500px;height:150px;">
+     </center>   
+     <pre style="font-size:20px;font-weight:bold;font-family:tahoma;color:white;background-color:pink;padding:10px;border-radius:10px"><a href="#"> Home</a>              <a href="product.html">product</a>              <a href="Blogs.html">Blogs</a>           <a href="AboutUs">About Us</a>             <a href="ContactUs.html">Contact Us</a>              <a href="Privacy.html">Privacy Policy</a>                <a href="Disclaimer.html">Disclaimer</a>                <a href="Terms.html">Terms & Conditions</a></pre>
+
+  <nav class="navbar">
+   </nav><h2>My Project</h2>
+  </nav>
+<main class="grid-container">
+    <section class="form-section">
+      <center><h3>LOGIN FORM</h3></center>
+      <center>
+      <form id="contact-form" novalidate>
+        <div class="input-group">
+          <label for="name">Name*</label>
+          <input type="text" id="name" required />
+          <small class="error"></small>
+        </div><br>
+        <div class="input-group">
+          <label for="email">Email*</label>
+          <input type="email" id="email" required />
+          <small class="error"></small>
+        </div><br>
+        <div>
+            <label>Password:</label>
+            <input type="password"><br><br>
+            <label>DOB:</label>
+            <input type="date"><br><br>
+            <label>Gender:</label>
+            <input type="radio" name:"mouni"<label>Male</label>
+            <input type="radio" name:"mouni"<label>Female</label>
+            <input type="radio" name:"mouni"<label>Other</label><br><br>
+            <label>Select Highest Qualification</label>
+            <select>
+            <option>-----select one-----</option>
+            <option>10th Class</option>
+            <option>Intermedia</option>
+            <option>Diploma</option>
+            <option>Graducation</option>
+            <option>PDA</option>
+            </select> 
+        </div><br>
+        <div class="input-group full-width">
+          <label for="message">Message*</label>
+          <textarea id="message" rows="4" required></textarea>
+          <small class="error"></small>
+        </div>
+        <br>
+        <button type="submit">Send</button>
+        <p id="form-feedback"></p>
+      </form>
+    </section>
+<center>
+    <!-- Image Gallery Section -->
+    <section class="gallery-section">
+      <h3>Image Gallery</h3>
+      <div class="gallery">
+        <!-- dynamically added images appear here -->
+      </div>
+      <form id="image-form">
+        <input type="url" id="img-url" placeholder="Image URL" required />
+        <input type="text" id="img-alt" placeholder="Alt text" required />
+        <button type="submit">Add Image</button><br>
+        <pre>                              <input type="Submit">                  </pre>
+      </form>
+    </section></center>
+  </main>
+  <script src="js/app.js"></script>
+  </center>
+</body>
+</html>
